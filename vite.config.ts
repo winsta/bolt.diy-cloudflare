@@ -92,6 +92,11 @@ export default defineConfig((config) => {
       // Define global values
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
     },
+          server: {
+    allowedHosts: [
+      'bolt-boltdiy.c8wvdx.easypanel.host'
+    ]
+  },
     build: {
       target: 'esnext',
       rollupOptions: {
